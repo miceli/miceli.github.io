@@ -60,7 +60,7 @@ img {
 
 
 <div id="header">
-<h1 class="title">First Test to produce a rmarkdown post/h1>
+<h1 class="title">First Test to produce a rmarkdown post</h1>
 </div>
 
 
