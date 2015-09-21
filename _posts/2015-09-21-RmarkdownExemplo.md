@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+---
+layout: post
+title: "Rmarkdown 1st Ex."
+date: 2015-09-21
+---
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
