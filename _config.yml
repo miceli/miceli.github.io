@@ -1,6 +1,10 @@
 name: Leonardo Miceli
 markdown: kramdown
 
+scholar:
+style: chicago-author-date
+locale: en
+
 source: ./_bibliography
 bibliography: leo.bib
 
@@ -9,3 +13,5 @@ details_layout: bibtex.html
 details_link: more
 
 permalink: /blog/:year/:month/:day/:title
+
+query: "@*"
