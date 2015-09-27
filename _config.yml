@@ -1,4 +1,7 @@
 name: Leonardo Miceli
 markdown: kramdown
 
+source: ./_bibliography
+bibliography: leo.bib
+
 permalink: /blog/:year/:month/:day/:title
