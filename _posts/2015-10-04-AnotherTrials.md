@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rmarkdown 1st Ex."
+title: "Lesson 0.1"
 date: 2015-10-04
 ---
 
