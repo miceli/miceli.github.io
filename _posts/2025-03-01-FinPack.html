@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Leonardo Miceli">
+<meta name="dcterms.date" content="2025-03-01">
+
+<title>R packages: a reduced list</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="MyRListPacks_files/libs/clipboard/clipboard.min.js"></script>
+<script src="MyRListPacks_files/libs/quarto-html/quarto.js"></script>
+<script src="MyRListPacks_files/libs/quarto-html/popper.min.js"></script>
+<script src="MyRListPacks_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="MyRListPacks_files/libs/quarto-html/anchor.min.js"></script>
+<link href="MyRListPacks_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="MyRListPacks_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="MyRListPacks_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="MyRListPacks_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="MyRListPacks_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">R packages: a reduced list</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Leonardo Miceli </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="lets-pack" class="level1">
+<h1>Let’s pack</h1>
+<p>R has a huge set of packages, an unprecedent open source community building packages for almost every branche of statistical computing and its applictaions. The main source of package is <a href="https://cran.r-project.org/">cran</a> and an unenumerated number spread over <a href="https://github.com/github">github</a>, <a href="https://about.gitlab.com/">gitlab</a> and <a href="https://r-forge.r-project.org/">r-forge</a>.</p>
+<p>The <a href="https://cran.r-project.org/web/views/">cran task views</a> has a very useful categorization for applications subjects. The list below is of similar task but much, much more limited and directed to map packages useful for finance, economics and econometrics applications. The preference is to list mature packages and projects with good documentation and examples. The last tag lists some data source for financial market data and database tools.</p>
+</section>
+<section id="the-packages" class="level1">
+<h1>The packages</h1>
+<section id="general-r-object-manipulation" class="level2">
+<h2 class="anchored" data-anchor-id="general-r-object-manipulation">General R object manipulation</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/data.table/index.html">data.table: Extension of ‘data.frame’</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/collapse/index.html">collapse: Advanced and Fast Data Transformation</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/fastverse/index.html">fastverse: A Suite of High-Performance Packages for Statistics and Data Manipulation</a></p></li>
+</ul>
+</section>
+<section id="dates-times" class="level2">
+<h2 class="anchored" data-anchor-id="dates-times">Dates &amp; times</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/timeDate/index.html">timeDate: Rmetrics - Chronological and Calendar Objects</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/chron/index.html">chron: Chronological Objects which can Handle Dates and Times</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/fasttime/index.html">fasttime: Fast Utility Function for Time Parsing and Conversion</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/nanotime/index.html">nanotime: Nanosecond-Resolution Time for R</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/clock/index.html">clock: Date-Time Types and Tools</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/anytime/index.html">anytime: Anything to ‘POSIXct’ or ‘Date’ Converter</a></p></li>
+</ul>
+</section>
+<section id="manipulating-time-series-objetcs" class="level2">
+<h2 class="anchored" data-anchor-id="manipulating-time-series-objetcs">Manipulating time series objetcs</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/timeSeries/index.html">timeSeries: Rmetrics - Financial Time Series Objects</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/qlcal/index.html">qlcal: R Bindings to the Calendaring Functionality of ‘QuantLib’</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/bizdays/index.html">bizdays: Business Days Calculations and Utilities</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/xts/index.html">xts: eXtensible Time Series</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/DTSg/index.html">DTSg: A Class for Working with Time Series Based on ‘data.table’ and ‘R6’ with Largely Optional Reference Semantics</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/dtts/index.html">dtts: ‘data.table’ Time-Series</a></p></li>
+</ul>
+</section>
+<section id="high-frequency-financial-price" class="level2">
+<h2 class="anchored" data-anchor-id="high-frequency-financial-price">High frequency financial price</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/highfrequency/index.html">highfrequency: Tools for Highfrequency Data Analysis</a></p></li>
+<li><p><a href="https://github.com/algoquant/HighFreq">HighFreq: The motivation for the package HighFreq is to create a library of functions designed for managing trade and quote (TAQ) and OHLC data, and for efficiently estimating various statistics, like volatility, skew, Hurst exponent, and Sharpe ratio, from that data</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/intradayModel/index.html">intradayModel: Modeling and Forecasting Financial Intraday Signals</a></p></li>
+</ul>
+</section>
+<section id="storing-retrieving-time-series-data" class="level2">
+<h2 class="anchored" data-anchor-id="storing-retrieving-time-series-data">Storing &amp; retrieving time series data</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/RSQLite/index.html">RSQLite: ‘SQLite’ Interface for R</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/duckdb/index.html">duckdb: DBI Package for the DuckDB Database Management System</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/sparklyr/index.html">sparklyr: R Interface to Apache Spark</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/sparklyr.flint">parklyr.flint: Sparklyr Extension for ‘Flint’</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/arrow/index.html">arrow: Integration to ‘Apache’ ‘Arrow’</a></p></li>
+</ul>
+</section>
+<section id="portfolio-construction-manipulation" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-construction-manipulation">Portfolio construction &amp; manipulation</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/fPortfolio/index.html">fPortfolio: Rmetrics - Portfolio Selection and Optimization</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/parma/index.html">parma: Portfolio Allocation and Risk Management Applications</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/PMwR/index.html">PMwR: Portfolio Management with R</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/PortfolioAnalytics/index.html">PortfolioAnalytics: Portfolio Analysis, Including Numerical Methods for Optimization of Portfolios</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/portfolioSim/index.html">portfolioSim: Framework for simulating equity portfolio strategies - out of CRAN</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/backtest/index.html">backtest: Exploring Portfolio-Based Conjectures About Financial Instruments</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/riskParityPortfolio/index.html">riskParityPortfolio: Design of Risk Parity Portfolios</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/sparseIndexTracking/index.html">sparseIndexTracking: Design of Portfolio of Stocks to Track an Index</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/portfolioBacktest/index.html">portfolioBacktest: Automated Backtesting of Portfolios over Multiple Datasets</a></p></li>
+</ul>
+</section>
+<section id="stochastic-differential-equations" class="level2">
+<h2 class="anchored" data-anchor-id="stochastic-differential-equations">Stochastic differential equations</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/sde/index.html">sde: Simulation and Inference for Stochastic Differential Equations</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/yuima/index.html">yuima: The YUIMA Project Package for SDEs</a></p></li>
+</ul>
+</section>
+<section id="quantitative-financial-functions" class="level2">
+<h2 class="anchored" data-anchor-id="quantitative-financial-functions">Quantitative financial functions</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/RQuantLib/index.html">RQuantLib: R Interface to the ‘QuantLib’ Library</a></p></li>
+<li><p><a href="https://r-forge.r-project.org/R/?group_id=156">fOptions: Rmetrics - Pricing and Evaluating Basic Options</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/quantmod/index.html">quantmod: Quantitative Financial Modelling Framework</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/TTR/index.html">TTR: Technical Trading Rules</a></p></li>
+</ul>
+</section>
+<section id="discrete-event-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="discrete-event-simulation">Discrete event simulation</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/simmer/">simmer: Discrete-Event Simulation for R</a></li>
+</ul>
+</section>
+<section id="complete-suite-for-backtesting-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="complete-suite-for-backtesting-in-r">Complete suite for backtesting in R</h2>
+<ul>
+<li><p><a href="https://quanttools.bitbucket.io/_site/index.html">QuantTools: Enhanced Quantitative Trading Modelling</a></p></li>
+<li><p><a href="https://github.com/braverock/quantstrat">quantstrat Transaction-oriented infrastructure for constructing trading systems and simulation.</a></p></li>
+</ul>
+</section>
+<section id="maximum-likelihood" class="level2">
+<h2 class="anchored" data-anchor-id="maximum-likelihood">Maximum likelihood</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/bbmle/index.html">bbmle: Tools for General Maximum Likelihood Estimation</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/EM.Fuzzy/index.html">EM.Fuzzy: EM Algorithm for Maximum Likelihood Estimation by Non-Precise Information</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/EstimationTools/index.html">EstimationTools: Maximum Likelihood Estimation for Probability Functions from Data Sets</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/jaatha/index.html">jaatha: Simulation-Based Maximum Likelihood Parameter Estimation</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/likelihood/index.html">likelihood: Methods for Maximum Likelihood Estimation</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/FAmle/index.html">FAmle: Maximum Likelihood and Bayesian Estimation of Univariate Probability Distributions</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/maxLik/index.html">maxLik: Maximum Likelihood Estimation and Related Tools</a></p></li>
+<li><p><a href="https://www.rdocumentation.org/packages/stats4">stats4: Statistical Functions using S4 Classes</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/em/index.html">em: Generic EM Algorithm</a></p></li>
+</ul>
+</section>
+<section id="reinforcement-learning" class="level2">
+<h2 class="anchored" data-anchor-id="reinforcement-learning">Reinforcement learning</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/QLearning/index.html">QLearning: Reinforcement Learning using the Q Learning Algorithm</a></p></li>
+<li><p><a href="https://github.com/markusdumke/reinforcelearn">reinforcelearn: Reinforcement Learning</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ReinforcementLearning/index.html">ReinforcementLearning: Model-Free Reinforcement Learning</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/RLT/index.html">RLT: Reinforcement Learning Trees</a></p></li>
+</ul>
+</section>
+<section id="dynamic-modeling-hidden-markov-models" class="level2">
+<h2 class="anchored" data-anchor-id="dynamic-modeling-hidden-markov-models">Dynamic modeling &amp; hidden Markov models</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/dynr/index.html">dynr: Dynamic Modeling in R</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MSwM/index.html">MSwM: Fitting Markov Switching Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/msm/index.html">msm: Multi-State Markov and Hidden Markov Models in Continuous Time</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/Copula.Markov/index.html">Copula.Markov: Copula-Based Estimation and Statistical Process Control for Serially Correlated Time Series</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/depmixS4/index.html">depmixS4: Dependent Mixture Models - Hidden Markov Models of GLMs and Other Distributions in S4</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/HiddenMarkov/index.html">HiddenMarkov: Hidden Markov Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/fHMM/index.html">fHMM: Fitting Hidden Markov Models to Financial Data</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/CollocInfer/index.html">CollocInfer: Collocation Inference for Dynamic Systems</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/bssm/index.html">bssm: Bayesian Inference of Non-Linear and Non-Gaussian State Space Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/pomdp/index.html">pomdp: Solver for Partially Observable Markov Decision Processes (POMDP)</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/pomp/index.html">pomp: Statistical Inference for Partially Observed Markov Processes</a></p></li>
+</ul>
+</section>
+<section id="markov-chain" class="level2">
+<h2 class="anchored" data-anchor-id="markov-chain">Markov chain</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/MOrder/index.html">MOrder: Check Time Homogeneity and Markov Chain Order</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MCTM/index.html">MCTM: Markov Chains Transition Matrices</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/march/index.html">march: Markov Chains</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/markovchain/index.html">markovchain: Easy Handling Discrete Time Markov Chains</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ctmcd/index.html">ctmcd: Estimating the Parameters of a Continuous-Time Markov Chain from Discrete-Time Data</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/seqHMM/index.html">seqHMM: Mixture Hidden Markov Models for Social Sequence Data and Other Multivariate, Multichannel Categorical Time Series</a></p></li>
+</ul>
+</section>
+<section id="markov-chain-monte-carlo" class="level2">
+<h2 class="anchored" data-anchor-id="markov-chain-monte-carlo">Markov chain Monte Carlo</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/mcmc/index.html">mcmc: Markov Chain Monte Carlo</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MCMCpack/index.html">MCMCpack: Markov Chain Monte Carlo (MCMC) Package</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MHadaptive/index.html">MHadaptive: General Markov Chain Monte Carlo for Bayesian Inference using adaptive Metropolis-Hastings sampling</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/RcppSMC/index.html">RcppSMC: Rcpp Bindings for Sequential Monte Carlo</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/rstan/index.html">rstan: R Interface to Stan</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/pmhtutorial/index.html">pmhtutorial: Minimal Working Examples for Particle Metropolis-Hastings</a> &amp; <a href="https://www.jstatsoft.org/article/view/v088c02">JSS</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/nimbleSMC/index.html">nimbleSMC: Sequential Monte Carlo Methods for ‘nimble’</a></p></li>
+</ul>
+</section>
+<section id="markov-decison-process" class="level2">
+<h2 class="anchored" data-anchor-id="markov-decison-process">Markov decison process</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/MDPtoolbox/index.html">MDPtoolbox: Markov Decision Processes Toolbox</a></p></li>
+<li><p><a href="https://cran.rstudio.com/web/packages/rcss/">RCSS: Convex Switching Systems</a> //https://journal.r-project.org/archive/2018/RJ-2018-054/RJ-2018-054.pdf</p></li>
+</ul>
+</section>
+<section id="stochastic-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="stochastic-volatility">Stochastic volatility</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/stochvol/index.html">stochvol: Efficient Bayesian Inference for Stochastic Volatility (SV) Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/bvarsv/index.html">bvarsv: Bayesian Analysis of a Vector Autoregressive Model with Stochastic Volatility and Time-Varying Parameters</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/factorstochvol/index.html">factorstochvol: Bayesian Estimation of (Sparse) Latent Factor Stochastic Volatility Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ASV/index.html">ASV: Stochastic Volatility Models with or without Leverage</a></p></li>
+</ul>
+</section>
+<section id="garch-models" class="level2">
+<h2 class="anchored" data-anchor-id="garch-models">Garch models</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/rugarch/index.html">rugarch: Univariate GARCH Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/rmgarch/index.html">rmgarch: Multivariate GARCH Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/fGarch/index.html">fGarch: Rmetrics - Autoregressive Conditional Heteroskedastic Modelling</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MSGARCH/index.html">MSGARCH: Markov-Switching GARCH Models</a></p></li>
+</ul>
+</section>
+<section id="time-series-var-vecm" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-var-vecm">Time series: VAR, VECM</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/MTS/index.html">MTS: All-Purpose Toolkit for Analyzing Multivariate Time Series (MTS) and Estimating Multivariate Volatility Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/vars/index.html">vars: VAR Modelling</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/astsa/index.html">astsa: Applied Statistical Time Series Analysis</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/dynlm/index.html">dynlm: Dynamic Linear Regression</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ARDL/index.html">ARDL: ARDL, ECM and Bounds-Test for Cointegration</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/dse/index.html">dse: Dynamic Systems Estimation (Time Series Package)</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/bayesianVARs/index.html">bayesianVARs: MCMC Estimation of Bayesian Vectorautoregressions</a></p></li>
+</ul>
+</section>
+<section id="state-space-models-dynamic-linear-models" class="level2">
+<h2 class="anchored" data-anchor-id="state-space-models-dynamic-linear-models">State Space models &amp; dynamic linear models</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/dlm/index.html">dlm: Bayesian and Likelihood Analysis of Dynamic Linear Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/dlnm/index.html">dlnm: Distributed Lag Non-Linear Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/KFAS/index.html">KFAS: Kalman Filter and Smoother for Exponential Family State Space Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/FKF/index.html">FKF: Fast Kalman Filter</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MARSS/index.html">MARSS: Multivariate Autoregressive State-Space Modeling</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/dfms/index.html">dfms: Dynamic Factor Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/smooth/index.html">smooth: Forecasting Using State Space Models</a></p></li>
+</ul>
+</section>
+<section id="hypothesis-tests-model-selection" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-tests-model-selection">Hypothesis tests &amp; model selection</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/urca/index.html">urca: Unit Root and Cointegration Tests for Time Series Data</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/lmtest/index.html">lmtest: Testing Linear Regression Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/sandwich/index.html">sandwich: Robust Covariance Matrix Estimators</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/MCS/">MCS: Model Confidence Set Procedure</a></p></li>
+</ul>
+</section>
+<section id="econometrics-methods" class="level2">
+<h2 class="anchored" data-anchor-id="econometrics-methods">Econometrics methods</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/ivreg/index.html">ivreg: Instrumental-Variables Regression by ‘2SLS’, ‘2SM’, or ‘2SMM’, with Diagnostics</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/sem/index.html">sem: Structural Equation Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/gmm/index.html">gmm: Generalized Method of Moments and Generalized Empirical Likelihood</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/systemfit/index.html">systemfit: Estimating Systems of Simultaneous Equations</a></p></li>
+</ul>
+</section>
+<section id="mixed-effect-panel-data-models" class="level2">
+<h2 class="anchored" data-anchor-id="mixed-effect-panel-data-models">Mixed effect &amp; panel data models</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/plm/index.html">plm: Linear Models for Panel Data</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/nlme/index.html">nlme: Linear and Nonlinear Mixed Effects Models</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/lme4/index.html">lme4: Linear Mixed-Effects Models</a></p></li>
+</ul>
+</section>
+<section id="non-linear-time-series-density-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="non-linear-time-series-density-estimation">Non-linear time series &amp; density estimation</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/NTS/index.html">NTS: Nonlinear Time Series Analysis</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/tsDyn/index.html">tsDyn: Nonlinear Time Series Models with Regime Switching</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/DChaos/">DChaos: Chaotic Time Series Analysis</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/assist/index.html">assist: A Suite of R Functions Implementing Spline Smoothing Techniques</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/xgboost/index.html">xgboost: Extreme Gradient Boosting</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/mboost/index.html">mboost: Model-Based Boosting</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/kernlab/index.html">kernlab: Kernel-Based Machine Learning Lab</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/KernSmooth/index.html">KernSmooth: Functions for Kernel Smoothing Supporting Wand &amp; Jones (1995)</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/fda/index.html">fda: Functional Data Analysis</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ks/index.html">ks: Kernel Smoothing</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/simukde/index.html">simukde: Simulation with Kernel Density Estimation</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/lpdensity/index.html">lpdensity: Local Polynomial Density Estimation and Inference</a></p></li>
+</ul>
+</section>
+<section id="optimization" class="level2">
+<h2 class="anchored" data-anchor-id="optimization">Optimization</h2>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/BB/">BB: Solving and Optimizing Large-Scale Nonlinear Systems</a></p></li>
+<li><p><a href="https://www.ime.usp.br/~egbirgin/tango/index.php">TANGO: Trustable Algorithms for Nonlinear General Optimization</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/quadprog/index.html">quadprog: Functions to Solve Quadratic Programming Problems</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/optimizeR/index.html">optimizeR: Unified Framework for Numerical Optimizers</a></p></li>
+</ul>
+</section>
+</section>
+<section id="data-provider-database" class="level1">
+<h1>Data provider &amp; database</h1>
+<section id="free-database-low-price-open-api" class="level2">
+<h2 class="anchored" data-anchor-id="free-database-low-price-open-api">Free database, low price &amp; open API</h2>
+<ul>
+<li><p><a href="https://data.nasdaq.com/">Nasdaq Data Link (quandl)</a></p></li>
+<li><p><a href="https://www.alphavantage.co/">alpha vantage</a></p></li>
+<li><p><a href="https://intrinio.com/">intrinio</a></p></li>
+<li><p><a href="http://eoddata.com/">eoddata</a></p></li>
+<li><p><a href="https://www.tiingo.com">tiingo</a></p></li>
+<li><p><a href="https://eodhistoricaldata.com/">Historical, Fundamentals and Markets API</a></p></li>
+<li><p><a href="https://finnhub.io/">Finnhub Stock API</a></p></li>
+<li><p><a href="https://marketstack.com/">Marketstack</a></p></li>
+<li><p><a href="https://twelvedata.com/">Twelve Data</a></p></li>
+<li><p><a href="https://www.marketdatacloud.com.br/">Market Data Cloud</a></p></li>
+<li><p><a href="https://www.dadosdemercado.com.br/">dados de mercado (Brasil)</a></p></li>
+<li><p><a href="https://site.financialmodelingprep.com/">Financial Modeling Prep</a></p></li>
+<li><p><a href="https://brapi.dev/">brapi (Brasil)</a></p></li>
+<li><p><a href="https://backtester.com.br/">backtester</a></p></li>
+</ul>
+</section>
+<section id="high-paid-providers" class="level2">
+<h2 class="anchored" data-anchor-id="high-paid-providers">High Paid Providers</h2>
+<ul>
+<li><p><a href="https://www.onetick.com/">Onetick</a></p></li>
+<li><p><a href="https://www.xignite.com/">Xignite</a></p></li>
+<li><p><a href="https://www.lseg.com/en">LSEG</a></p></li>
+<li><p><a href="https://www.factset.com/">Factset</a></p></li>
+<li><p><a href="https://www.bloomberg.com/professional/product/market-data/">Bloomberg</a></p></li>
+<li><p><a href="https://www.spglobal.com/marketintelligence/en/">S&amp;P Global</a></p></li>
+</ul>
+</section>
+<section id="database-for-time-series" class="level2">
+<h2 class="anchored" data-anchor-id="database-for-time-series">Database for Time Series</h2>
+<ul>
+<li><p><a href="https://www.timescale.com/">Timescale</a></p></li>
+<li><p><a href="https://www.influxdata.com">Influxdata</a></p></li>
+<li><p><a href="https://github.com/twosigma/flint">Flint - Two Sigma</a></p></li>
+<li><p><a href="https://questdb.io/">Questdb</a></p></li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
